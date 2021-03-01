@@ -13,6 +13,7 @@ const Favorites = () => {
     },
   ]);
   const favnotes = useSelector((state) => state.firestore.ordered.favNotes);
+  //always use optional chaining while parsing long objects
   console.log(favnotes);
 
   return <NoteList notes={favnotes}/>;
