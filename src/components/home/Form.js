@@ -5,7 +5,7 @@ import { addNote } from "../../store/actions/noteAction";
 import useInput from "../../customhook/useInput";
 
 const Form = () => {
-     
+     // ; is missing everywhere. Do put it always (required or not)
     const [title,bindTitle,resetTitle] = useInput()
     const [content,bindContent,resetContent] = useInput()
     const dispatch = useDispatch()
