@@ -4,6 +4,7 @@ import { isEmpty, isLoaded, useFirestoreConnect } from "react-redux-firebase";
 import moment from "moment";
 
 const NotesDetail = (props) => {
+  // destructure props always
   const id = props.match.params.id;
   useFirestoreConnect([{ collection: "notes", doc: id }]);
   const note = useSelector(
@@ -42,6 +43,7 @@ const NotesDetail = (props) => {
   );
 
   return (
+    // try to not use const for jsx or dom elements
     noteMarkup 
   );
 };
